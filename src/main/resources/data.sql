@@ -1,6 +1,7 @@
 -- Insertar Clientes
-INSERT INTO customer (name, email) VALUES ('Ada Lovelace', 'ada@example.com');
-INSERT INTO customer (name, email) VALUES ('Alan Turing', 'alan@example.com');
+INSERT INTO customer (name, email, segment) VALUES ('Ada Lovelace', 'ada@example.com', 'STANDARD');
+INSERT INTO customer (name, email, segment) VALUES ('Alan Turing', 'alan@example.com', 'VIP');
+INSERT INTO customer (name, email, segment) VALUES ('Grace Hopper', 'grace@example.com', 'PREMIUM');
 
 -- Insertar Transacciones para Ada (customer_id = 1)
 INSERT INTO transaction (amount, status, credit_card_number, customer_id) 

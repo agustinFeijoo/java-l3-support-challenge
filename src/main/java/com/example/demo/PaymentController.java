@@ -30,7 +30,11 @@ public class PaymentController {
     public ResponseEntity<CustomerSummaryDTO> getCustomerSummary(@PathVariable Long id) {
         Customer customer = paymentService.getCustomerById(id);
         
-        int totalTransactions = customer.getTransactions().size();
+        int totalTransactions = 0;
+        
+        if (CustomerSegment.VIP.equals(customer.getSegment())) {
+            totalTransactions = customer.getTransactions().size();
+        }
         
         return ResponseEntity.ok(new CustomerSummaryDTO(customer.getName(), totalTransactions));
     }

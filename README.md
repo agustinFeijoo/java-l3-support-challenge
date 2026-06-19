@@ -25,4 +25,4 @@ Para levantar y trabajar en este proyecto necesitarás:
 Puedes clonar el repositorio y correr el proyecto usando tu IDE o mediante la terminal con el siguiente comando:
 
 ```bash
-mvn spring-boot:run
+./mvnw spring-boot:run

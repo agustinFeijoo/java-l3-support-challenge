@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TransactionResponseDTO {
-    private Long transactionId;
-    private String status;
+public class CustomerSummaryDTO {
+    private String customerName;
+    private int totalTransactions;
 }
+	
